@@ -35,8 +35,6 @@ async def get_db():
         yield db
 
 
-from sqlalchemy import select
-
 async def init_db():
 
     async with session() as db:
